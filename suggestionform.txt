@@ -1,0 +1,123 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Sep 09, 2023 at 01:09 PM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `suggestionform`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `suggestion`
+--
+
+CREATE TABLE `suggestion` (
+  `suggestion_id` int(11) NOT NULL,
+  `submission_date` timestamp NOT NULL DEFAULT current_timestamp(),
+  `area_equipment` text NOT NULL,
+  `present_status` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `suggested_solution` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `impact_options` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `any_other_improvement` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `saving_status` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `suggestion_details` text NOT NULL,
+  `supporting_document` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `suggestion`
+--
+
+INSERT INTO `suggestion` (`suggestion_id`, `submission_date`, `area_equipment`, `present_status`, `suggested_solution`, `impact_options`, `any_other_improvement`, `saving_status`, `suggestion_details`, `supporting_document`) VALUES
+(1, '2023-09-08 10:33:29', '98qदक', '456', '13', 'Improve Efficiency/दक्षता में सुधार करेगा, Productivity Improvement/उत्पादकता में सुधार करेगा, Improve Housekeeping/गृह व्यवस्था में सुधार करेगा', 'hgjy', 'One Time/एक बार बचत', 'nmjnhn', '../viewAll/uploaded_docs/discussion.png'),
+(2, '2023-09-08 10:33:45', 'bxgfgn', 'hnmghmh', 'mjf', 'Reduce Waste/कचरा कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा, Productivity Improvement/उत्पादकता में सुधार करेगा, Improve Housekeeping/गृह व्यवस्था में सुधार करेगा, Improve Safety/सुरक्षा बढ़ाएगा, Improve Process/कार्य विधि मेह सुधार करेगा', ',jk.l', 'No Saving/कोई बचत नहीं', 'lk/kl', '../viewAll/uploaded_docs/4.png'),
+(3, '2023-09-02 00:24:04', 'gfgfd', 'gfgghn', 'hjhj', 'Reduce Waste/कचरा कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा', 'weqweqw', 'One Time/एक बार बचत', 'qweqgfe', 'uploaded_docs/Untitled.png'),
+(4, '2023-09-02 00:24:05', 'gfgfd', 'gfgghn', 'hjhj', 'Reduce Waste/कचरा कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा', 'weqweqw', 'One Time/एक बार बचत', 'qweqgfe', 'uploaded_docs/Untitled.png'),
+(5, '2023-09-02 00:24:05', 'gfgfd', 'gfgghn', 'hjhj', 'Reduce Waste/कचरा कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा', 'weqweqw', 'One Time/एक बार बचत', 'qweqgfe', 'uploaded_docs/Untitled.png'),
+(6, '2023-09-02 00:24:05', 'gfgfd', 'gfgghn', 'hjhj', 'Reduce Waste/कचरा कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा', 'weqweqw', 'One Time/एक बार बचत', 'qweqgfe', 'uploaded_docs/Untitled.png'),
+(7, '2023-09-02 00:24:06', 'gfgfd', 'gfgghn', 'hjhj', 'Reduce Waste/कचरा कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा', 'weqweqw', 'One Time/एक बार बचत', 'qweqgfe', 'uploaded_docs/Untitled.png'),
+(8, '2023-09-02 00:34:16', 'VVFDV', 'BGBNCGB', 'NGFGNX', 'Improve Efficiency/दक्षता में सुधार करेगा, Improve Housekeeping/गृह व्यवस्था में सुधार करेगा, Enviromental Benefit/वातावरण के हित में', 'NGFGXNF', 'Recurring/आवर्तक बचत', 'NFGXGF', 'uploaded_docs/4.png'),
+(9, '2023-09-02 00:36:22', 'VVFDV', 'BGBNCGB', 'NGFGNX', 'Improve Efficiency/दक्षता में सुधार करेगा, Improve Housekeeping/गृह व्यवस्था में सुधार करेगा, Enviromental Benefit/वातावरण के हित में', 'NGFGXNF', 'Recurring/आवर्तक बचत', 'NFGXGF', 'uploaded_docs/1693634782.png'),
+(10, '2023-09-02 00:36:23', 'VVFDV', 'BGBNCGB', 'NGFGNX', 'Improve Efficiency/दक्षता में सुधार करेगा, Improve Housekeeping/गृह व्यवस्था में सुधार करेगा, Enviromental Benefit/वातावरण के हित में', 'NGFGXNF', 'Recurring/आवर्तक बचत', 'NFGXGF', 'uploaded_docs/1693634783.png'),
+(11, '2023-09-02 00:36:24', 'VVFDV', 'BGBNCGB', 'NGFGNX', 'Improve Efficiency/दक्षता में सुधार करेगा, Improve Housekeeping/गृह व्यवस्था में सुधार करेगा, Enviromental Benefit/वातावरण के हित में', 'NGFGXNF', 'Recurring/आवर्तक बचत', 'NFGXGF', 'uploaded_docs/1693634784.png'),
+(12, '2023-09-02 00:36:24', 'VVFDV', 'BGBNCGB', 'NGFGNX', 'Improve Efficiency/दक्षता में सुधार करेगा, Improve Housekeeping/गृह व्यवस्था में सुधार करेगा, Enviromental Benefit/वातावरण के हित में', 'NGFGXNF', 'Recurring/आवर्तक बचत', 'NFGXGF', 'uploaded_docs/1693634784.png'),
+(13, '2023-09-02 00:38:01', 'VVFDV', 'BGBNCGB', 'NGFGNX', 'Improve Efficiency/दक्षता में सुधार करेगा, Improve Housekeeping/गृह व्यवस्था में सुधार करेगा, Enviromental Benefit/वातावरण के हित में', 'NGFGXNF', 'Recurring/आवर्तक बचत', 'NFGXGF', 'uploaded_docs/1693634881.png'),
+(14, '2023-09-02 00:38:14', 'fsdfdf', 'grffg', 'gfdf', 'Improve Efficiency/दक्षता में सुधार करेगा, Improve Housekeeping/गृह व्यवस्था में सुधार करेगा, Enviromental Benefit/वातावरण के हित में', 'fdgxd', 'Recurring/आवर्तक बचत', 'bdbffsz', 'uploaded_docs/1693634894.png'),
+(15, '2023-09-02 00:39:17', 'fsdfdf', 'grffg', 'gfdf', 'Improve Efficiency/दक्षता में सुधार करेगा, Improve Housekeeping/गृह व्यवस्था में सुधार करेगा, Enviromental Benefit/वातावरण के हित में', 'fdgxd', 'Recurring/आवर्तक बचत', 'bdbffsz', 'NTPC-Logo_1.png'),
+(16, '2023-09-02 00:39:17', 'fsdfdf', 'grffg', 'gfdf', 'Improve Efficiency/दक्षता में सुधार करेगा, Improve Housekeeping/गृह व्यवस्था में सुधार करेगा, Enviromental Benefit/वातावरण के हित में', 'fdgxd', 'Recurring/आवर्तक बचत', 'bdbffsz', 'NTPC-Logo_2.png'),
+(17, '2023-09-02 00:39:24', 'fsdfdf', 'grffg', 'gfdf', 'Improve Efficiency/दक्षता में सुधार करेगा, Improve Housekeeping/गृह व्यवस्था में सुधार करेगा, Enviromental Benefit/वातावरण के हित में', 'fdgxd', 'Recurring/आवर्तक बचत', 'bdbffsz', 'NTPC-Logo_3.png'),
+(18, '2023-09-02 00:39:46', 'gdgg', 'fgffd', 'gdf', 'Reduce Waste/कचरा कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा', 'fsdfd', 'Recurring/आवर्तक बचत', 'gzddfz', 'view_1.png'),
+(19, '2023-09-02 00:40:34', 'gdgg', 'fgffd', 'gdf', 'Reduce Waste/कचरा कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा', 'fsdfd', 'Recurring/आवर्तक बचत', 'gzddfz', 'view_2.png'),
+(20, '2023-09-02 00:40:43', 'gdgg', 'fgffd', 'gdf', 'Reduce Waste/कचरा कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा', 'fsdfd', 'Recurring/आवर्तक बचत', 'gzddfz', 'view_3.png'),
+(21, '2023-09-02 00:40:48', 'gdgg', 'fgffd', 'gdf', 'Reduce Waste/कचरा कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा', 'fsdfd', 'Recurring/आवर्तक बचत', 'gzddfz', 'view_4.png'),
+(22, '2023-09-02 00:42:02', 'gdgg', 'fgffd', 'gdf', 'Reduce Waste/कचरा कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा', 'fsdfd', 'Recurring/आवर्तक बचत', 'gzddfz', 'uploaded_docs/view_1.png'),
+(23, '2023-09-02 00:42:07', 'gdgg', 'fgffd', 'gdf', 'Reduce Waste/कचरा कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा', 'fsdfd', 'Recurring/आवर्तक बचत', 'gzddfz', 'uploaded_docs/view_2.png'),
+(24, '2023-09-02 00:42:24', 'gdgg', 'fgffd', 'gdf', 'Reduce Waste/कचरा कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा', 'fsdfd', 'Recurring/आवर्तक बचत', 'gzddfz', 'uploaded_docs/view_0.png'),
+(25, '2023-09-02 00:44:44', 'gdgg', 'fgffd', 'gdf', 'Reduce Waste/कचरा कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा', 'fsdfd', 'Recurring/आवर्तक बचत', 'gzddfz', 'uploaded_docs/view.png'),
+(26, '2023-09-02 00:44:49', 'gdgg', 'fgffd', 'gdf', 'Reduce Waste/कचरा कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा', 'fsdfd', 'Recurring/आवर्तक बचत', 'gzddfz', 'uploaded_docs/view_3.png'),
+(27, '2023-09-02 00:45:04', 'gdgg', 'fgffd', 'gdf', 'Reduce Waste/कचरा कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा', 'fsdfd', 'Recurring/आवर्तक बचत', 'gzddfz', 'uploaded_docs/view.png'),
+(28, '2023-09-02 00:45:06', 'gdgg', 'fgffd', 'gdf', 'Reduce Waste/कचरा कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा', 'fsdfd', 'Recurring/आवर्तक बचत', 'gzddfz', 'uploaded_docs/view_1.png'),
+(29, '2023-09-02 00:45:08', 'gdgg', 'fgffd', 'gdf', 'Reduce Waste/कचरा कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा', 'fsdfd', 'Recurring/आवर्तक बचत', 'gzddfz', 'uploaded_docs/view_2.png'),
+(30, '2023-09-02 00:45:20', 'gdgg', 'fgffd', 'gdf', 'Reduce Waste/कचरा कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा', 'fsdfd', 'Recurring/आवर्तक बचत', 'gzddfz', 'uploaded_docs/view_3.png'),
+(31, '2023-09-02 00:45:20', 'gdgg', 'fgffd', 'gdf', 'Reduce Waste/कचरा कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा', 'fsdfd', 'Recurring/आवर्तक बचत', 'gzddfz', 'uploaded_docs/view_4.png'),
+(32, '2023-09-02 00:54:34', 'gdgg', 'fgffd', 'gdf', 'Reduce Waste/कचरा कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा', 'fsdfd', 'Recurring/आवर्तक बचत', 'gzddfz', 'uploaded_docs/view.png'),
+(33, '2023-09-02 00:54:40', 'gdgg', 'fgffd', 'gdf', 'Reduce Waste/कचरा कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा', 'fsdfd', 'Recurring/आवर्तक बचत', 'gzddfz', 'uploaded_docs/view_1.png'),
+(34, '2023-09-02 00:54:40', 'gdgg', 'fgffd', 'gdf', 'Reduce Waste/कचरा कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा', 'fsdfd', 'Recurring/आवर्तक बचत', 'gzddfz', 'uploaded_docs/view_2.png'),
+(35, '2023-09-02 00:54:56', 'gdgg', 'fgffd', 'gdf', 'Reduce Waste/कचरा कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा', 'fsdfd', 'Recurring/आवर्तक बचत', 'gzddfz', 'uploaded_docs/view_3.png'),
+(36, '2023-09-02 00:55:01', 'gdgg', 'fgffd', 'gdf', 'Reduce Waste/कचरा कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा', 'fsdfd', 'Recurring/आवर्तक बचत', 'gzddfz', 'uploaded_docs/view_4.png'),
+(37, '2023-09-02 00:55:19', '46', '889', '445644', '', '44', 'One Time/एक बार बचत', '9+559+', ''),
+(38, '2023-09-02 00:55:46', '46', '889', '445644', '', '', 'One Time/एक बार बचत', '9+559+', ''),
+(39, '2023-09-02 00:57:20', 'fdss', 'gfAGf', ' bv', '', 'bvb', 'Recurring/आवर्तक बचत', 'n vbn bn', ''),
+(40, '2023-09-02 03:44:37', '854', '54156', '444', 'Reduce Waste/कचरा कम करेगा, reduce cost/अपव्य कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा, Productivity Improvement/उत्पादकता में सुधार करेगा, Improve Housekeeping/गृह व्यवस्था में सुधार करेगा, Improve Safety/सुरक्षा बढ़ाएगा, Enviromental Benefit/वातावरण के हित में, Improve Process/कार्य विधि मेह सुधार करेगा', 'dcd4894', 'Recurring/आवर्तक बचत', 'f456f4654vf5v4fd56', 'uploaded_docs/1.png'),
+(41, '2023-09-02 03:47:06', '854', '54156', '444', 'Reduce Waste/कचरा कम करेगा, reduce cost/अपव्य कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा, Productivity Improvement/उत्पादकता में सुधार करेगा, Improve Housekeeping/गृह व्यवस्था में सुधार करेगा, Improve Safety/सुरक्षा बढ़ाएगा, Enviromental Benefit/वातावरण के हित में, Improve Process/कार्य विधि मेह सुधार करेगा', 'dcd4894', 'Recurring/आवर्तक बचत', 'f456f4654vf5v4fd56', 'uploaded_docs/1.png'),
+(42, '2023-09-02 03:48:01', '854', '54156', '444', 'Reduce Waste/कचरा कम करेगा, reduce cost/अपव्य कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा, Productivity Improvement/उत्पादकता में सुधार करेगा, Improve Housekeeping/गृह व्यवस्था में सुधार करेगा, Improve Safety/सुरक्षा बढ़ाएगा, Enviromental Benefit/वातावरण के हित में, Improve Process/कार्य विधि मेह सुधार करेगा', 'dcd4894', 'Recurring/आवर्तक बचत', 'f456f4654vf5v4fd56', 'uploaded_docs/1_1.png'),
+(43, '2023-09-02 03:48:02', '854', '54156', '444', 'Reduce Waste/कचरा कम करेगा, reduce cost/अपव्य कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा, Productivity Improvement/उत्पादकता में सुधार करेगा, Improve Housekeeping/गृह व्यवस्था में सुधार करेगा, Improve Safety/सुरक्षा बढ़ाएगा, Enviromental Benefit/वातावरण के हित में, Improve Process/कार्य विधि मेह सुधार करेगा', 'dcd4894', 'Recurring/आवर्तक बचत', 'f456f4654vf5v4fd56', 'uploaded_docs/1_2.png'),
+(44, '2023-09-02 03:49:07', '854', '54156', '444', 'Reduce Waste/कचरा कम करेगा, reduce cost/अपव्य कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा, Productivity Improvement/उत्पादकता में सुधार करेगा, Improve Housekeeping/गृह व्यवस्था में सुधार करेगा, Improve Safety/सुरक्षा बढ़ाएगा, Enviromental Benefit/वातावरण के हित में, Improve Process/कार्य विधि मेह सुधार करेगा', 'dcd4894', 'Recurring/आवर्तक बचत', 'f456f4654vf5v4fd56', './viewAll/uploaded_docs/1.png'),
+(45, '2023-09-02 03:49:15', '854', '54156', '444', 'Reduce Waste/कचरा कम करेगा, reduce cost/अपव्य कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा, Productivity Improvement/उत्पादकता में सुधार करेगा, Improve Housekeeping/गृह व्यवस्था में सुधार करेगा, Improve Safety/सुरक्षा बढ़ाएगा, Enviromental Benefit/वातावरण के हित में, Improve Process/कार्य विधि मेह सुधार करेगा', 'dcd4894', 'Recurring/आवर्तक बचत', 'f456f4654vf5v4fd56', './viewAll/uploaded_docs/1_1.png'),
+(46, '2023-09-02 03:49:18', '854', '54156', '444', 'Reduce Waste/कचरा कम करेगा, reduce cost/अपव्य कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा, Productivity Improvement/उत्पादकता में सुधार करेगा, Improve Housekeeping/गृह व्यवस्था में सुधार करेगा, Improve Safety/सुरक्षा बढ़ाएगा, Enviromental Benefit/वातावरण के हित में, Improve Process/कार्य विधि मेह सुधार करेगा', 'dcd4894', 'Recurring/आवर्तक बचत', 'f456f4654vf5v4fd56', './viewAll/uploaded_docs/1_2.png'),
+(47, '2023-09-02 03:49:59', '854', '54156', '444', 'Reduce Waste/कचरा कम करेगा, reduce cost/अपव्य कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा, Productivity Improvement/उत्पादकता में सुधार करेगा, Improve Housekeeping/गृह व्यवस्था में सुधार करेगा, Improve Safety/सुरक्षा बढ़ाएगा, Enviromental Benefit/वातावरण के हित में, Improve Process/कार्य विधि मेह सुधार करेगा', 'dcd4894', 'Recurring/आवर्तक बचत', 'f456f4654vf5v4fd56', '../viewAll/uploaded_docs/1_1.png'),
+(48, '2023-09-02 03:50:00', '854', '54156', '444', 'Reduce Waste/कचरा कम करेगा, reduce cost/अपव्य कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा, Productivity Improvement/उत्पादकता में सुधार करेगा, Improve Housekeeping/गृह व्यवस्था में सुधार करेगा, Improve Safety/सुरक्षा बढ़ाएगा, Enviromental Benefit/वातावरण के हित में, Improve Process/कार्य विधि मेह सुधार करेगा', 'dcd4894', 'Recurring/आवर्तक बचत', 'f456f4654vf5v4fd56', '../viewAll/uploaded_docs/1_2.png'),
+(49, '2023-09-02 03:50:01', '854', '54156', '444', 'Reduce Waste/कचरा कम करेगा, reduce cost/अपव्य कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा, Productivity Improvement/उत्पादकता में सुधार करेगा, Improve Housekeeping/गृह व्यवस्था में सुधार करेगा, Improve Safety/सुरक्षा बढ़ाएगा, Enviromental Benefit/वातावरण के हित में, Improve Process/कार्य विधि मेह सुधार करेगा', 'dcd4894', 'Recurring/आवर्तक बचत', 'f456f4654vf5v4fd56', '../viewAll/uploaded_docs/1_3.png'),
+(50, '2023-09-02 03:50:30', '122323', 'fgdg', 'gfxh', 'Reduce Waste/कचरा कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा', 'zgdf', 'Recurring/आवर्तक बचत', 'gfhhg', '../viewAll/uploaded_docs/discussion.png'),
+(51, '2023-09-02 05:17:36', 'vdv', 'vf', 'bg', 'Reduce Waste/कचरा कम करेगा, Improve Efficiency/दक्षता में सुधार करेगा', 'nnn', 'Recurring/आवर्तक बचत', 'hngh', '../viewAll/uploaded_docs/Untitled.png');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `suggestion`
+--
+ALTER TABLE `suggestion`
+  ADD PRIMARY KEY (`suggestion_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `suggestion`
+--
+ALTER TABLE `suggestion`
+  MODIFY `suggestion_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
