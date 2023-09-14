@@ -1,0 +1,21 @@
+/* custom-scrollbar.css */
+
+/* Customize the scrollbar track */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+  background-color: #f0f0f0; /* Background color of the track */
+}
+
+/* Customize the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #0078d4; /* Color of the thumb */
+  border-radius: 5px; /* Rounded corners for the thumb */
+}
+
+/* Optional: Customize the scrollbar on Firefox */
+/* This is for Firefox, which uses a different syntax */
+/* Note: Firefox supports scrollbar-color property as well */
+* {
+  scrollbar-width: 5px;
+  scrollbar-color: #0078d4 transparent;
+}
